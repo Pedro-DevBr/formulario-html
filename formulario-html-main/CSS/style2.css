@@ -1,0 +1,120 @@
+/* --- Base / página --- */
+html, body {
+  background: #ffffff;
+  color: #333;
+  font-family: "Times New Roman", Georgia, serif; /* igual ao visual clássico */
+  line-height: 1.3;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 8px 0 6px;
+}
+h1 { font-size: 36px; font-weight: 700; }
+h2 { font-size: 26px; font-weight: 700; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #bcbcbc;
+  margin: 12px auto 18px;
+  width: 92%;
+}
+
+/* Centralizar o formulário e limitar a largura para parecer a captura */
+form {
+  width: 700px;           /* ajuste fino do “miolo” */
+  margin: 0 auto 24px;    /* centraliza */
+}
+
+/* --- Fieldsets/legends (caixas cinzas) --- */
+fieldset {
+  border: 1px solid #bcbcbc;
+  background: #f9f9f9;
+  padding: 14px 16px 10px;
+  margin-bottom: 16px;
+}
+legend {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 6px;
+  color: #222;
+}
+
+/* --- Linhas de formulário no estilo “rótulo à esquerda / campo à direita” --- */
+label {
+  display: inline-block;     /* permite largura fixa */
+  width: 170px;              /* alinhamento à esquerda como na imagem */
+  text-align: right;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  border: 1px solid #b7b7b7;
+  background: #fff;
+  padding: 4px 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+  box-shadow: inset 0 1px 0 #ededed; /* leve “afundado” clássico */
+}
+
+/* Espaços entre linhas (como os <br><br> que você já usou) */
+fieldset br { line-height: 10px; }
+
+/* Ajustes visuais dos 3 campos de data para ficarem pequenos e na mesma linha */
+#dia, #mês {
+  width: 32px;   /* “dd” e “mm” curtinhos */
+  text-align: center;
+}
+#ano {
+  width: 56px;   /* “aaaa” um pouco maior */
+  text-align: center;
+}
+
+/* Radios e checkboxes com rótulo à direita, alinhados */
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+span, /* ex.: “Turno:” */
+label + br + br {
+  /* sem estilos, só pra manter o espaçamento do seu HTML */
+}
+
+/* --- Botões com “relevo” (estilo antigo) --- */
+input[type="submit"],
+input[type="reset"] {
+  font-family: "Times New Roman", Georgia, serif;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 1px solid #7aa0c8;            /* borda azul acinzentada */
+  background: linear-gradient(#eaf2fb, #d6e3f2); /* suave gradiente */
+  box-shadow: inset 0 1px 0 #ffffff, 0 1px 2px rgba(0,0,0,.25);
+  margin-right: 10px;
+  cursor: pointer;
+}
+input[type="submit"]:active,
+input[type="reset"]:active {
+  background: linear-gradient(#d6e3f2, #eaf2fb); /* inverte ao clicar */
+}
+
+/* --- Pequenas correções visuais para lembrar o layout clássico --- */
+select {
+  min-width: 140px;
+}
+
+/* Grid simples para 3 colunas, igual à imagem */
+.matricula-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* três colunas proporcionais */
+  gap: 16px;
+  align-items: start;
+}
+.matricula-grid .col label {
+  width: auto;           /* dentro das colunas, rótulos sem largura fixa */
+  text-align: left;
+}

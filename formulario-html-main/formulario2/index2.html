@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Virtual - Formulário de Pré-Matrícula</title>
+  <link rel="stylesheet" href="..\CSS\style2.css">
+</head>
+
+<body>
+  <h1>Escola Virtual</h1>
+  <h2>Formulário de Pré-Matrícula</h2>
+  <hr>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Dados Pessoais:</legend>
+
+      <label for="nomeAluno">Nome do Aluno:</label>
+      <input type="text" id="nomeAluno" name="nomeAluno"><br><br>
+
+      <label for="dia">Nascimento (dd/mm/aaaa):</label>
+      <input type="text" id="dia" name="dia" size="2" maxlength="2"> /
+      <input type="text" id="mes" name="mes" size="2" maxlength="2"> /
+      <input type="text" id="ano" name="ano" size="4" maxlength="4"><br><br>
+
+      <label for="nomeMae">Nome da Mãe:</label>
+      <input type="text" id="nomeMae" name="nomeMae"><br><br>
+
+      <label for="nomePai">Nome do Pai:</label>
+      <input type="text" id="nomePai" name="nomePai"><br><br>
+
+      <label for="ddd">Telefone: DDD</label>
+      <input type="text" id="ddd" name="ddd" size="2" maxlength="2">
+
+      <label for="telefone">Tel:</label>
+      <input type="text" id="telefone" name="telefone" size="8" maxlength="9">
+
+      <label for="ramal">Ramal:</label>
+      <input type="text" id="ramal" name="ramal" size="4" maxlength="4"><br><br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Informações de Matrícula:</legend>
+
+      <div class="matricula-grid">
+        <div class="col">
+          <label for="serie">Série:</label>
+          <select name="serie" id="serie">
+            <option value="pre-escolar">pré-escolar</option>
+            <option value="1ano">1º Ano</option>
+            <option value="2ano">2º Ano</option>
+            <option value="3ano">3º Ano</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <span>Turno:</span><br>
+          <input type="radio" id="manha" name="turno" value="manha">
+          <label for="manha" style="width:auto; text-align:left;">Manhã</label><br>
+          <input type="radio" id="tarde" name="turno" value="tarde">
+          <label for="tarde" style="width:auto; text-align:left;">Tarde</label>
+        </div>
+
+        <div class="col">
+          <label style="width:auto; text-align:left;">Atividades Extracurriculares:</label><br>
+          <input type="checkbox" name="atividade" value="informatica" id="a1"><label for="a1"
+            style="width:auto; text-align:left;">Informática</label><br>
+          <input type="checkbox" name="atividade" value="musica" id="a2"><label for="a2"
+            style="width:auto; text-align:left;">Música</label><br>
+          <input type="checkbox" name="atividade" value="balet" id="a3"><label for="a3"
+            style="width:auto; text-align:left;">Balet</label><br>
+          <input type="checkbox" name="atividade" value="pintura" id="a4"><label for="a4"
+            style="width:auto; text-align:left;">Pintura</label><br>
+          <input type="checkbox" name="atividade" value="judo" id="a5"><label for="a5"
+            style="width:auto; text-align:left;">Judô</label><br>
+          <input type="checkbox" name="atividade" value="futebol" id="a6"><label for="a6"
+            style="width:auto; text-align:left;">Futebol</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Enviar Formulário">
+    <input type="reset" value="Limpar Campos">
+
+  </form>
+</body>
+
+</html>
