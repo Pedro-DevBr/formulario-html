@@ -1,114 +1,140 @@
+:root {
+  --cinza-borda: #dcdcdc;
+  --cinza-faixa: #f3f3f3;
+  --cinza-texto: #444;
+  --azul-titulo: #2a4e6d;
+  --vermelho: #b64b4b;
+  --verde: #e8f7d7;
+}
 
-  /* ----- CONFIGURAÇÕES GERAIS ----- */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .wrap {
-    background-color: #fff;
-    width: 95%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 25px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
 
-  h1 {
-    text-align: center;
-    color: #2a4e6d;
-    border-bottom: 3px solid #2a4e6d;
-    padding-bottom: 10px;
-  }
+.wrap {
+  width: 1000px;
+  max-width: 95%;
+  margin: 24px auto;
+  background: #fff;
+  border: 1px solid var(--cinza-borda);
+  padding: 22px;
+}
 
-  /* ----- BLOCO DE SEÇÕES ----- */
-  .faixa {
-    background-color: #2a4e6d;
-    color: white;
-    padding: 8px 10px;
-    font-weight: bold;
-    margin-top: 30px;
-    border-radius: 4px 4px 0 0;
-  }
+.barra {
+  border-bottom: 3px solid var(--azul-titulo);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
 
-  .bloco {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 0 0 4px 4px;
-    background-color: #fafafa;
-  }
+.barra h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--azul-titulo);
+}
 
-  /* ----- TABELAS ----- */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+.faixa {
+  background: var(--cinza-faixa);
+  border: 1px solid var(--cinza-borda);
+  padding: 10px 12px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 18px;
+}
 
-  td {
-    padding: 8px;
-    vertical-align: top;
-  }
+.bloco {
+  border: 1px solid var(--cinza-borda);
+  border-top: none;
+  padding: 14px 10px;
+}
 
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 12px;
+}
 
-  input,
-  select,
-  textarea,
-  button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
+td {
+  vertical-align: top;
+}
 
-  input:focus,
-  select:focus,
-  textarea:focus {
-    outline: none;
-    border-color: #2a4e6d;
-  }
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--cinza-texto);
+  margin-bottom: 4px;
+}
 
-  span {
-    font-size: 12px;
-    color: #777;
-  }
+.hint {
+  color: var(--vermelho);
+  font-weight: normal;
+  margin-left: 6px;
+  font-size: 12px;
+}
 
-  /* ----- BOTÕES ----- */
-  .acoes {
-    text-align: center;
-    margin-top: 20px;
-  }
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 14px;
+}
 
-  .acoes button {
-    width: 160px;
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.ok {
+  background-color: var(--verde);
+}
 
-  .acoes button[type="submit"] {
-    background-color: #2a4e6d;
-    color: white;
-  }
+.cep-grid {
+  display: table;
+  width: 100%;
+}
 
-  .acoes button[type="reset"] {
-    background-color: #ccc;
-  }
+.cep-col {
+  display: table-cell;
+  vertical-align: top;
+}
 
-  .acoes button:hover {
-    opacity: 0.9;
-  }
+.cep-btn {
+  width: 44px;
+  padding-left: 10px;
+}
+
+.lupa {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  background: #f7f7f7;
+  text-align: center;
+  cursor: default;
+}
+
+.acoes {
+  text-align: right;
+  margin-top: 16px;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  background: #1f6feb;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.sec {
+  background: #666;
+}

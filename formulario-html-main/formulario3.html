@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 3 — Configurações Gerais</title>
+    <link rel="stylesheet" href="..\CSS\style3.css">
+</head>
+
+<body>
+    <h1>Geral</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Geral</legend>
+
+
+            <div>
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino">
+                    <option value="chamado" selected>Chamado</option>
+                    <option value="tarefa">Tarefa</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <input type="checkbox" id="toolbar" name="toolbar" value="1">
+                <label for="toolbar">Barra de ferramentas (toolbar)</label>
+            </div>
+
+
+            <div>
+                <label for="classificacao">Classificação do anexo:</label>
+                <select id="classificacao" name="classificacao">
+                    <option value="doc-analise" selected>Documento de análise</option>
+                    <option value="contrato">Contrato</option>
+                    <option value="orcamento">Orçamento</option>
+                </select>
+
+                <input type="checkbox" id="privado" name="privado" value="1">
+                <label for="privado">Privado</label>
+
+                <input type="checkbox" id="location" name="location" value="1">
+                <label for="location">Barra de endereços (location)</label>
+            </div>
+
+            <div>
+                <label for="posV">Posição vertical:</label>
+                <select id="posV" name="posicao_vertical">
+                    <option value="topo">Topo</option>
+                    <option value="centro" selected>Centro</option>
+                    <option value="base">Base</option>
+                </select>
+
+                <input type="checkbox" id="directories" name="directories" value="1">
+                <label for="directories">Botões extras (directories)</label>
+            </div>
+
+            <div>
+                <label for="posH">Posição horizontal:</label>
+                <select id="posH" name="posicao_horizontal">
+                    <option value="esquerda">Esquerda</option>
+                    <option value="centro" selected>Centro</option>
+                    <option value="direita">Direita</option>
+                </select>
+
+                <input type="checkbox" id="statusbar" name="statusbar" value="1">
+                <label for="statusbar">Barra de status (status)</label>
+            </div>
+
+            <div>
+                <label for="largura">Largura:</label>
+                <input type="text" id="largura" name="largura" placeholder="Ex: 100, 110px, 90%">
+
+                <input type="checkbox" id="menubar" name="menubar" value="1">
+                <label for="menubar">Barra de menus (menubar)</label>
+            </div>
+
+
+            <div>
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" name="altura" placeholder="Ex: 100, 110px, 90%">
+
+                <input type="checkbox" id="copyhistory" name="copyhistory" value="1">
+                <label for="copyhistory">Histórico (copyhistory)</label>
+            </div>
+
+
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Formulário de compra">
+            </div>
+
+
+            <div>
+                <label for="htmlHeader">HTML Header:</label><br>
+                <textarea id="htmlHeader" name="html_header" cols="80" rows="6"
+                    placeholder="&lt;meta&gt;, &lt;link&gt;, etc."></textarea>
+            </div>
+
+            <div>
+                <label for="cssArea">CSS:</label><br>
+                <textarea id="cssArea" name="css_area" cols="80" rows="6" placeholder="/* CSS opcional */"></textarea>
+            </div>
+
+            <div>
+                <label for="htmlBody">HTML Body (rodapé):</label><br>
+                <textarea id="htmlBody" name="html_body" cols="80" rows="6"
+                    placeholder="Conteúdo HTML do rodapé"></textarea>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
